@@ -67,12 +67,15 @@ def paciente_mayor_dias_internación(pacientes: list):
     for i in range(len(pacientes)):
         if pacientes[i][4] > mayor:
             mayor= pacientes[i][4]
-            posicion_sublista_mayor= i
+            historial= pacientes[i][0]
+            nombre= pacientes[i][1]
+            edad= pacientes[i][2]
+            diagnostico= pacientes[i][3]
 
     print(f"""Paciente con más días de internación:
-        Numero de Historia Clinica: {pacientes[i][0]}
-        Nombre del paciente: {pacientes[i][1]}
-        Edad del paciente: {pacientes[i][2]}
-        Diagnostico: {pacientes[i][3]}
-        Cantidad de días de internación: {pacientes[i][4]}
+        Numero de Historia Clinica: {historial}
+        Nombre del paciente: {nombre}
+        Edad del paciente: {edad}
+        Diagnostico: {edad}
+        Cantidad de días de internación: {mayor}
         """)
