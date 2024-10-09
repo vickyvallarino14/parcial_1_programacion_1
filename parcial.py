@@ -26,7 +26,7 @@ while seleccion !="9":
         case "7":
             cantidad_pacientes_mas_5_dias_internacion(pacientes)
         case "8":
-            pass
+            promedio_dias_internacion(pacientes)
         case "9":
             print("¡Hasta luego!")
         case _:

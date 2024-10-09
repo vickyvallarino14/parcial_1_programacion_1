@@ -114,10 +114,12 @@ def cantidad_pacientes_mas_5_dias_internacion(pacientes: list):
 
     print(f"Cantidad de pacientes con mas de 5 dias de internacion: {contador_pacientes}")
 
-# def promedio_dias_internacion(pacientes: list):
-#     """Funcion que calcula el promedio de dias de todos los pacientes en internación"""
-#     acumulador_dias = 0
-#     for i in pacientes:
-#         acumulador_dias += i[4]
-#         promedio = acumulador_dias / len(pacientes)
-#         print(f"Promedio de dias de internacion de todos los pacientes: {promedio}")
+def promedio_dias_internacion(pacientes: list):
+    """Funcion que calcula el promedio de dias de todos los pacientes en internación"""
+    
+    acumulador_dias = 0
+    for i in pacientes:
+        acumulador_dias += i[4]
+        promedio = acumulador_dias / len(pacientes)
+
+    print(f"Promedio de dias de internacion de todos los pacientes: {promedio}")
