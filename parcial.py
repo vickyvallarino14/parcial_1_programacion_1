@@ -1,12 +1,13 @@
 from funciones import *
-
+#numero historia clinica, nombre paciente, edad paciente, diagnostico, cantidad de dias de internacion
+pacientes=[]
 seleccion=0
 while seleccion !="9":
     menu()
     seleccion=input("Ingrese su opcion: ")
     match seleccion:
         case "1": 
-            pass
+            cargar_pacientes(pacientes)
         case "2":
             pass
         case "3":
@@ -22,6 +23,6 @@ while seleccion !="9":
         case "8":
             pass
         case "9":
-            pass
+            print("¡Hasta luego!")
         case _:
-            print("error")
+            print("Error, opción incorrecta. Vuelva a seleccionar una opción:")
