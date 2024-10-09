@@ -20,7 +20,7 @@ def cargar_pacientes(pacientes):
     contador_ingresos=0
     cantidad_ingresos = int(input("Ingrese la cantidad de pacientes que desea cargar en la base de datos: "))
     while contador_ingresos < cantidad_ingresos:
-        historia_clinica = int(input("Ingrese el numero de historia clinica: "))
+        historia_clinica = int(input(f"Ingrese el numero de historia clinica del paciente {contador_ingresos+1}: "))
         nombre = input("Ingrese el nombre del paciente: ").capitalize()
         edad = int(input("Ingrese la edad del paciente: "))
         diagnostico = input("Ingrese el diagnostico: ").capitalize()
