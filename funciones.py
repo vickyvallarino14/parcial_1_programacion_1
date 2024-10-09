@@ -15,7 +15,7 @@ def menu():
     9.Salir    
     """) 
 
-def cargar_pacientes(pacientes):
+def cargar_pacientes(pacientes: list) -> list:
     """Función para cargar pacientes"""
     contador_ingresos=0
     cantidad_ingresos = int(input("Ingrese la cantidad de pacientes que desea cargar en la base de datos: "))
@@ -29,4 +29,13 @@ def cargar_pacientes(pacientes):
 
         contador_ingresos+=1
 
-        
+def mostrar_pacientes(pacientes: list):
+    """Funcion para mostrar los pacientes"""
+    for i in range(len(pacientes)):
+        print(f"""Paciente {i+1}
+        Numero de Historia Clinica: {pacientes[i][0]}
+        Nombre del paciente: {pacientes[i][1]}
+        Edad del paciente: {pacientes[i][2]}
+        Diagnostico: {pacientes[i][3]}
+        Cantidad de días de internación: {pacientes[i][4]}
+""")
