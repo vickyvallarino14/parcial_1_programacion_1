@@ -13,7 +13,7 @@ while seleccion !="9":
         case "3":
             buscar_pacientes_numero_historial(pacientes)
         case "4": 
-            pass
+            ordernar_historial_ascendente(pacientes)
         case "5":
             pass
         case "6": 

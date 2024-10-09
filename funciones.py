@@ -49,3 +49,13 @@ def buscar_pacientes_numero_historial(pacientes: list):
             print(f"Historial Clinico: {pacientes[i][0]}, Nombre: {pacientes[i][1]}, Edad: {pacientes[i][2]}, Diagnostico: {pacientes[i][3]}, Cantidad de días de internación: {pacientes[i][4]}")
             return 
     print("Error. El número del historial clinico ingresado no se encuentra registrado")
+
+def ordernar_historial_ascendente(pacientes: list):
+    """Función para ordenar los pacientes ingresados por su numero de historial clinico de manera ascendente"""
+    n = len(pacientes)
+    for i in range(n-1):       
+        for j in range(0,n-1-i): 
+            if pacientes[j][0] > pacientes[j+1][0]:
+                pacientes[j], pacientes[j+1] = pacientes[j+1], pacientes[j]
+    for k in range(n):
+        print(f"Precio: {pacientes[k][0]}")
