@@ -63,7 +63,7 @@ def ordernar_historial_ascendente(pacientes: list):
 def paciente_mayor_dias_internación(pacientes: list):
     """Funcion para determinar el paciente con mayor dias de internación y mostrar sus datos"""
 
-    mayor = float('-inf')
+    mayor = 0
     for i in range(len(pacientes)):
         if pacientes[i][4] > mayor:
             mayor= pacientes[i][4]
