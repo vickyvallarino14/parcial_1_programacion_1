@@ -42,11 +42,10 @@ def mostrar_pacientes(pacientes: list):
         
 def buscar_pacientes_numero_historial(pacientes: list):
     """Función para buscar los datos del paciente por su número de historial clinico"""
-    while pacientes != []:
-        busqueda= int(input("Ingrese el numero del historial clinico del paciente: "))
+    busqueda= int(input("Ingrese el numero del historial clinico del paciente: "))
     
-        for i in range(len(pacientes)):
-            if busqueda == pacientes[i][0]:
-                print(f"Historial Clinico: {pacientes[i][0]}, Nombre: {pacientes[i][1]}, Edad: {pacientes[i][2]}, Diagnostico: {pacientes[i][3]}, Cantidad de días de internación: {pacientes[i][4]}")
-                return 
-        print("Error. El número del historial clinico ingresado no se encuentra registrado")
+    for i in range(len(pacientes)):
+        if busqueda == pacientes[i][0]:
+            print(f"Historial Clinico: {pacientes[i][0]}, Nombre: {pacientes[i][1]}, Edad: {pacientes[i][2]}, Diagnostico: {pacientes[i][3]}, Cantidad de días de internación: {pacientes[i][4]}")
+            return 
+    print("Error. El número del historial clinico ingresado no se encuentra registrado")
