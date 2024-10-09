@@ -15,7 +15,7 @@ while seleccion !="9":
         case "4": 
             ordernar_historial_ascendente(pacientes)
         case "5":
-            pass
+            paciente_mayor_dias_internación(pacientes)
         case "6": 
             pass
         case "7":

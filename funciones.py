@@ -42,7 +42,7 @@ def mostrar_pacientes(pacientes: list):
         
 def buscar_pacientes_numero_historial(pacientes: list):
     """Función para buscar los datos del paciente por su número de historial clinico"""
-    busqueda= int(input("Ingrese el numero del historial clinico del paciente: "))
+    busqueda = int(input("Ingrese el numero del historial clinico del paciente: "))
     
     for i in range(len(pacientes)):
         if busqueda == pacientes[i][0]:
@@ -59,3 +59,20 @@ def ordernar_historial_ascendente(pacientes: list):
                 pacientes[j], pacientes[j+1] = pacientes[j+1], pacientes[j]
     for k in range(n):
         print(f"Historial Clinico: {pacientes[k][0]}, Nombre: {pacientes[k][1]}, Edad: {pacientes[k][2]}, Diagnostico: {pacientes[k][3]}, Cantidad de días de internación: {pacientes[k][4]}")
+
+def paciente_mayor_dias_internación(pacientes: list):
+    """Funcion para determinar el paciente con mayor dias de internación y mostrar sus datos"""
+
+    mayor = float('-inf')
+    for i in range(len(pacientes)):
+        if pacientes[i][4] > mayor:
+            mayor= pacientes[i][4]
+            posicion_sublista_mayor= i
+
+    print(f"""Paciente con más días de internación:
+        Numero de Historia Clinica: {pacientes[i][0]}
+        Nombre del paciente: {pacientes[i][1]}
+        Edad del paciente: {pacientes[i][2]}
+        Diagnostico: {pacientes[i][3]}
+        Cantidad de días de internación: {pacientes[i][4]}
+        """)
