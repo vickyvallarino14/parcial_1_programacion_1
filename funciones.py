@@ -17,13 +17,16 @@ def menu():
 
 def cargar_pacientes(pacientes):
     """Función para cargar pacientes"""
-    seguir ="si"
-    while seguir =="si":
+    contador_ingresos=0
+    cantidad_ingresos = int(input("Ingrese la cantidad de pacientes que desea cargar en la base de datos: "))
+    while contador_ingresos < cantidad_ingresos:
         historia_clinica = int(input("Ingrese el numero de historia clinica: "))
-        nombre = input("Ingrese el nombre del paciente: ")
+        nombre = input("Ingrese el nombre del paciente: ").capitalize()
         edad = int(input("Ingrese la edad del paciente: "))
-        diagnostico = input("Ingrese el diagnostico: ")
-        dias_internacion = int(input("Ingrese los días de internación"))
+        diagnostico = input("Ingrese el diagnostico: ").capitalize()
+        dias_internacion = int(input("Ingrese los días de internación: "))
         pacientes.append([historia_clinica,nombre,edad,diagnostico,dias_internacion])
 
-        seguir=input("Desea seguir ingresando si/no: ").lower()
+        contador_ingresos+=1
+
+        

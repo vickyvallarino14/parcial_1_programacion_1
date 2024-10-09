@@ -8,7 +8,6 @@ while seleccion !="9":
     match seleccion:
         case "1": 
             cargar_pacientes(pacientes)
-            print(pacientes)
         case "2":
             pass
         case "3":
