@@ -66,11 +66,11 @@ def paciente_mayor_dias_internación(pacientes: list):
     mayor = 0
     for i in range(len(pacientes)):
         if pacientes[i][4] > mayor:
-            mayor= pacientes[i][4]
-            historial= pacientes[i][0]
-            nombre= pacientes[i][1]
-            edad= pacientes[i][2]
-            diagnostico= pacientes[i][3]
+            mayor = pacientes[i][4]
+            historial = pacientes[i][0]
+            nombre = pacientes[i][1]
+            edad = pacientes[i][2]
+            diagnostico = pacientes[i][3]
 
     print(f"""Paciente con más días de internación:
         Numero de Historia Clinica: {historial}
@@ -78,4 +78,24 @@ def paciente_mayor_dias_internación(pacientes: list):
         Edad del paciente: {edad}
         Diagnostico: {diagnostico}
         Cantidad de días de internación: {mayor}
+        """)
+
+def paciente_menor_dias_internación(pacientes: list):
+    """Funcion para determinar el paciente con menor dias de internación y mostrar sus datos"""
+
+    menor = float('inf')
+    for i in range(len(pacientes)):
+        if pacientes[i][4] < menor:
+            menor = pacientes[i][4]
+            historial = pacientes[i][0]
+            nombre = pacientes[i][1]
+            edad = pacientes[i][2]
+            diagnostico = pacientes[i][3]
+
+    print(f"""Paciente con menos días de internación:
+        Numero de Historia Clinica: {historial}
+        Nombre del paciente: {nombre}
+        Edad del paciente: {edad}
+        Diagnostico: {diagnostico}
+        Cantidad de días de internación: {menor}
         """)
