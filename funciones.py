@@ -58,4 +58,4 @@ def ordernar_historial_ascendente(pacientes: list):
             if pacientes[j][0] > pacientes[j+1][0]:
                 pacientes[j], pacientes[j+1] = pacientes[j+1], pacientes[j]
     for k in range(n):
-        print(f"Precio: {pacientes[k][0]}")
+        print(f"Historial Clinico: {pacientes[k][0]}, Nombre: {pacientes[k][1]}, Edad: {pacientes[k][2]}, Diagnostico: {pacientes[k][3]}, Cantidad de días de internación: {pacientes[k][4]}")
