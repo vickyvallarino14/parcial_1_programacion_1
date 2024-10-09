@@ -24,7 +24,7 @@ while seleccion !="9":
         case "6": 
             paciente_menor_dias_internación(pacientes)
         case "7":
-            pass
+            cantidad_pacientes_mas_5_dias_internacion(pacientes)
         case "8":
             pass
         case "9":
