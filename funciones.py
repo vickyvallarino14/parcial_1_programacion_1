@@ -1,10 +1,6 @@
 #numero historia clinica, nombre paciente, edad paciente, diagnostico, cantidad de dias de internacion
-pacientes=[
-    [12, "juan", 34, "hepatitis", 9],
-    [13, "lucia", 21, "fiebre", 0],
-    [14, "horacio", 11, "leucemia", 60],
-    [15, "pepe", 45, "fractura", 2]
-]
+pacientes=[]
+
 
 def menu():
     """Función para mostrar el menú al usuario"""
@@ -116,7 +112,7 @@ def cantidad_pacientes_mas_5_dias_internacion(pacientes: list):
 
 def promedio_dias_internacion(pacientes: list):
     """Funcion que calcula el promedio de dias de todos los pacientes en internación"""
-    
+
     acumulador_dias = 0
     for i in pacientes:
         acumulador_dias += i[4]
