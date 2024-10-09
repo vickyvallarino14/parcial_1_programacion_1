@@ -1,5 +1,10 @@
 #numero historia clinica, nombre paciente, edad paciente, diagnostico, cantidad de dias de internacion
-pacientes=[]
+pacientes=[
+    [12, "juan", 34, "hepatitis", 9],
+    [13, "lucia", 21, "fiebre", 0],
+    [14, "horacio", 11, "leucemia", 60],
+    [15, "pepe", 45, "fractura", 2]
+]
 
 def menu():
     """Función para mostrar el menú al usuario"""
@@ -99,3 +104,10 @@ def paciente_menor_dias_internación(pacientes: list):
         Diagnostico: {diagnostico}
         Cantidad de días de internación: {menor}
         """)
+
+def cantidad_pacientes_mas_5_dias_internacion(pacientes: list):
+    """Función que cuenta la cantidad de pacientes con más de 5 dias de internacion"""
+    contador_pacientes = 0
+    for i in range(len(pacientes)):
+        if pacientes[i][4] > 5:
+            contador_pacientes += 1

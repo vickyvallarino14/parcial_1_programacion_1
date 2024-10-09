@@ -1,6 +1,11 @@
 from funciones import *
 #numero historia clinica, nombre paciente, edad paciente, diagnostico, cantidad de dias de internacion
-pacientes=[]
+pacientes=[
+    [12, "juan", 34, "hepatitis", 9],
+    [13, "lucia", 21, "fiebre", 0],
+    [14, "horacio", 11, "leucemia", 60],
+    [15, "pepe", 45, "fractura", 2]
+]
 seleccion=0
 while seleccion !="9":
     menu()
@@ -17,7 +22,7 @@ while seleccion !="9":
         case "5":
             paciente_mayor_dias_internación(pacientes)
         case "6": 
-            pass
+            paciente_menor_dias_internación(pacientes)
         case "7":
             pass
         case "8":
