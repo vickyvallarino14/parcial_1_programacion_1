@@ -76,6 +76,6 @@ def paciente_mayor_dias_internación(pacientes: list):
         Numero de Historia Clinica: {historial}
         Nombre del paciente: {nombre}
         Edad del paciente: {edad}
-        Diagnostico: {edad}
+        Diagnostico: {diagnostico}
         Cantidad de días de internación: {mayor}
         """)
