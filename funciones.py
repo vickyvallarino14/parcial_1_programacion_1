@@ -108,7 +108,7 @@ def paciente_menor_dias_internación(pacientes: list):
 def cantidad_pacientes_mas_5_dias_internacion(pacientes: list):
     """Función que cuenta la cantidad de pacientes con más de 5 dias de internacion"""
     contador_pacientes = 0
-    for i in range(len(pacientes)):
+    for i in pacientes:
         if i[4] > 5:
             contador_pacientes += 1
 
