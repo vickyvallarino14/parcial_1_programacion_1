@@ -11,7 +11,7 @@ while seleccion !="9":
         case "2":
             mostrar_pacientes(pacientes)
         case "3":
-            pass
+            buscar_pacientes_numero_historial(pacientes)
         case "4": 
             pass
         case "5":

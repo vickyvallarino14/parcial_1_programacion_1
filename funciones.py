@@ -15,7 +15,7 @@ def menu():
     9.Salir    
     """) 
 
-def cargar_pacientes(pacientes: list) -> list:
+def cargar_pacientes(pacientes: list):
     """Función para cargar pacientes"""
     contador_ingresos=0
     cantidad_ingresos = int(input("Ingrese la cantidad de pacientes que desea cargar en la base de datos: "))
@@ -39,3 +39,14 @@ def mostrar_pacientes(pacientes: list):
         Diagnostico: {pacientes[i][3]}
         Cantidad de días de internación: {pacientes[i][4]}
 """)
+        
+def buscar_pacientes_numero_historial(pacientes: list):
+    """Función para buscar los datos del paciente por su número de historial clinico"""
+    while pacientes != []:
+        busqueda= int(input("Ingrese el numero del historial clinico del paciente: "))
+    
+        for i in range(len(pacientes)):
+            if busqueda == pacientes[i][0]:
+                print(f"Historial Clinico: {pacientes[i][0]}, Nombre: {pacientes[i][1]}, Edad: {pacientes[i][2]}, Diagnostico: {pacientes[i][3]}, Cantidad de días de internación: {pacientes[i][4]}")
+                return 
+        print("Error. El número del historial clinico ingresado no se encuentra registrado")
